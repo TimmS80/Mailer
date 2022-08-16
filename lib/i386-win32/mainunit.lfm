@@ -1,0 +1,175 @@
+object Form1: TForm1
+  Left = 670
+  Height = 354
+  Top = 204
+  Width = 540
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Form1'
+  ClientHeight = 354
+  ClientWidth = 540
+  LCLVersion = '2.2.2.0'
+  object TxtSender: TLabeledEdit
+    Left = 136
+    Height = 23
+    Top = 16
+    Width = 136
+    EditLabel.Height = 15
+    EditLabel.Width = 76
+    EditLabel.Caption = 'E-Mail Sender:'
+    EditLabel.ParentColor = False
+    LabelPosition = lpLeft
+    LabelSpacing = 5
+    TabOrder = 0
+    Text = 'Timm <ts@edvhh.de>'
+  end
+  object CmdSendMail: TButton
+    Left = 448
+    Height = 25
+    Top = 136
+    Width = 75
+    Caption = 'Senden'
+    OnClick = CmdSendMailClick
+    TabOrder = 1
+  end
+  object TxtReceiver: TLabeledEdit
+    Left = 136
+    Height = 23
+    Top = 40
+    Width = 136
+    EditLabel.Height = 15
+    EditLabel.Width = 89
+    EditLabel.Caption = 'E-Mail Recipient:'
+    EditLabel.ParentColor = False
+    LabelPosition = lpLeft
+    LabelSpacing = 5
+    TabOrder = 2
+    Text = 'ad@edvhh.de'
+  end
+  object TxtSubject: TLabeledEdit
+    Left = 136
+    Height = 23
+    Top = 64
+    Width = 136
+    EditLabel.Height = 15
+    EditLabel.Width = 82
+    EditLabel.Caption = 'E-Mail Subject::'
+    EditLabel.ParentColor = False
+    LabelPosition = lpLeft
+    LabelSpacing = 5
+    TabOrder = 3
+    Text = 'Testmail'
+  end
+  object TxtUsername: TLabeledEdit
+    Left = 448
+    Height = 23
+    Top = 16
+    Width = 80
+    EditLabel.Height = 15
+    EditLabel.Width = 92
+    EditLabel.Caption = 'SMTP Username::'
+    EditLabel.ParentColor = False
+    LabelPosition = lpLeft
+    LabelSpacing = 5
+    TabOrder = 4
+    Text = 'TxtUsername'
+  end
+  object TxtPassword: TLabeledEdit
+    Left = 448
+    Height = 23
+    Top = 40
+    Width = 80
+    EditLabel.Height = 15
+    EditLabel.Width = 86
+    EditLabel.Caption = 'SMTP Password:'
+    EditLabel.ParentColor = False
+    LabelPosition = lpLeft
+    LabelSpacing = 5
+    TabOrder = 5
+    Text = 'TxtPassword'
+  end
+  object TxtHost: TLabeledEdit
+    Left = 448
+    Height = 23
+    Top = 64
+    Width = 80
+    EditLabel.Height = 15
+    EditLabel.Width = 61
+    EditLabel.Caption = 'SMTP Host:'
+    EditLabel.ParentColor = False
+    LabelPosition = lpLeft
+    LabelSpacing = 5
+    TabOrder = 6
+    Text = 'TxtHost'
+  end
+  object TxtPort: TLabeledEdit
+    Left = 448
+    Height = 23
+    Top = 88
+    Width = 80
+    EditLabel.Height = 15
+    EditLabel.Width = 58
+    EditLabel.Caption = 'SMTP Port:'
+    EditLabel.ParentColor = False
+    LabelPosition = lpLeft
+    LabelSpacing = 5
+    TabOrder = 7
+    Text = 'TxtPort'
+  end
+  object TxtMessage: TMemo
+    Left = 16
+    Height = 90
+    Top = 96
+    Width = 288
+    Lines.Strings = (
+      'E-Mail von einem Lazarus-Programm.'
+    )
+    TabOrder = 8
+  end
+  object LstAttachments: TListBox
+    Left = 16
+    Height = 112
+    Top = 200
+    Width = 288
+    ItemHeight = 0
+    TabOrder = 9
+  end
+  object CmdAddAttachment: TButton
+    Left = 16
+    Height = 25
+    Top = 320
+    Width = 139
+    Caption = 'Add Attachment'
+    OnClick = CmdAddAttachmentClick
+    TabOrder = 10
+  end
+  object ChkSSL: TCheckBox
+    Left = 376
+    Height = 19
+    Top = 112
+    Width = 60
+    Caption = 'Use SSL'
+    TabOrder = 11
+  end
+  object ChkTLS: TCheckBox
+    Left = 469
+    Height = 19
+    Top = 112
+    Width = 60
+    Caption = 'Use TLS'
+    TabOrder = 12
+  end
+  object CmdRemoveAttachment: TButton
+    Left = 168
+    Height = 25
+    Top = 320
+    Width = 136
+    Caption = 'Remove Attachment'
+    OnClick = CmdRemoveAttachmentClick
+    TabOrder = 13
+  end
+  object DlgSelectAttachment: TOpenDialog
+    Left = 104
+    Top = 256
+  end
+end
