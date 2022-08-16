@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CONFIG>
-  <Compiler Value="L:\Programme\Lazarus\fpc\3.2.2\bin\i386-win32\fpc.exe" Date="1420790967"/>
-  <Params Value=" -MObjFPC -Scghi -O1 -gw2 -godwarfsets -gl -WG -l -vewnhibq -FiL:\Lazarus-Projects\Mailer\lib\i386-win32 -FuL:\Programme\Lazarus\lcl\units\i386-win32\win32 -FuL:\Programme\Lazarus\lcl\units\i386-win32 -FuC:\Users\Impulse255\AppData\Local\lazarus\onlinepackagemanager\packages\xmailer-master\pkg\lib\i386-win32 -FuL:\Programme\Lazarus\components\freetype\lib\i386-win32 -FuC:\Users\Impulse255\AppData\Local\lazarus\onlinepackagemanager\packages\synapse40.1\lib\i386-win32 -FuL:\Programme\Lazarus\components\lazutils\lib\i386-win32 -FuL:\Programme\Lazarus\packager\units\i386-win32 -FuL:\Lazarus-Projects\Mailer\ -FUL:\Lazarus-Projects\Mailer\lib\i386-win32\ -FEL:\Lazarus-Projects\Mailer\ -oL:\Lazarus-Projects\Mailer\Mailer.exe -dLCL -dLCLwin32 Mailer.lpr"/>
-</CONFIG>
